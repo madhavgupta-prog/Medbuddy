@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MedBuddy</title>
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="icon" href="./assets/favicon.ico" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
-    <body>
-        <header>
-            <h1>MedBuddy</h1>
-            <p>Your Pocket Health Partner</p>
-        </header>  
-        <section class="search-section">
-            <input type="text" id="searchInput" placeholder="Search first aid topics...">
-            <button id="aiSuggestBtn">🧠 AI Suggest</button>
-        </section>  
-        <section id="cardsContainer">
-            <!-- Cards will be injected here via JS -->
-        </section>
-        <footer>
-            <p>Contact us: <a href="tel:+919999999999">+91 99999 99999</a></p>
-            <div class="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            </div>
-        </footer>  
-        <script src="./script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedBuddy - Your Pocket Health Partner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>MedBuddy</h1>
+    <p>Your Pocket Health Partner</p>
+  </header>
+
+  <div class="search-section">
+    <input id="searchInput" type="text" placeholder="Search First Aid..." />
+    <input id="aiInput" type="text" placeholder="Ask AI (e.g., How to treat a burn?)" />
+    <button id="askAI">Ask AI 🤖</button>
+  </div>
+
+  <p id="aiResponse" class="ai-response"></p>
+
+  <section id="cards">
+    <div class="card">
+      <h3>Burns</h3>
+      <p>Cool the area with running water for 10 minutes. Do not use ice.</p>
+    </div>
+    <div class="card">
+      <h3>Fractures</h3>
+      <p>Immobilize the area with a splint and seek medical help.</p>
+    </div>
+    <div class="card">
+      <h3>Choking</h3>
+      <p>Give 5 back blows between the shoulder blades followed by abdominal thrusts.</p>
+    </div>
+    <div class="card">
+      <h3>CPR</h3>
+      <p>30 chest compressions and 2 rescue breaths until help arrives.</p>
+    </div>
+    <div class="card">
+      <h3>Snake Bite</h3>
+      <p>Keep the victim calm and the bitten area still. Do not suck the venom.</p>
+    </div>
+    <!-- Add more cards if you want -->
+  </section>
+
+  <footer>
+    <p>Contact us: <a href="tel:+911234567890">+91-1234567890</a></p>
+    <div class="socials">
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="ask-ai.js" defer></script>
+</body>
 </html>
