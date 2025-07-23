@@ -5,55 +5,288 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MedBuddy - Your Pocket Health Partner</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
-  <header>
-    <h1>MedBuddy</h1>
-    <p>Your Pocket Health Partner</p>
-  </header>
+  <section id="hero">
+    <header>
+      
+      <h1><img src="images/image copy 3.png" style="height: 40px;width: 40px;">MedBuddy</h1>
+      <p>Your Pocket Health Partner</p>
+    </header>
 
-  <div class="search-section">
-    <input id="searchInput" type="text" placeholder="Search First Aid..." />
-    <input id="aiInput" type="text" placeholder="Ask AI (e.g., How to treat a burn?)" />
-    <button id="askAI">Ask AI 🤖</button>
-  </div>
-
-  <p id="aiResponse" class="ai-response"></p>
+    <div class="search-section">
+      <input id="searchInput" type="text" placeholder="Search First Aid..." />
+    </div>
+  </section>
+  
 
   <section id="cards">
-    <div class="card">
-      <h3>Burns</h3>
-      <p>Cool the area with running water for 10 minutes. Do not use ice.</p>
+    <div class="card-row">
+      <div class="card">
+        <img src="images/flame.png" alt="Burns">
+        <h3>Burns</h3>
+        <p>Cool under running water for 10 minutes.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy.png" alt="">
+        <h3>Fractures</h3>
+        <p>Immobilize and seek medical help.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 2.png" alt="">
+        <h3>Bleeding</h3>
+        <p>Apply pressure and elevate if possible.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 4.png" alt="">
+        <h3>Shock</h3>
+        <p>Lay person down, keep warm, call help.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 5.png" alt="">
+        <h3>Sprains</h3>
+        <p>Use R.I.C.E. – Rest, Ice, Compress, Elevate.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 6.png" alt="">
+        <h3>Heat Stroke</h3>
+        <p>Cool person, seek medical help.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 11.png" alt="">
+        <h3>Fainting</h3>
+        <p>Lay flat, elevate legs, loosen clothing.</p>
+      </div>
+      <div class="card">
+        <img src="images\image.png" alt="Choking Icon">
+        <h3>Choking</h3>
+        <p>Give 5 back blows, 5 abdominal thrusts if unable to speak/breathe.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 12.png" alt="">
+        <h3>Nosebleed</h3>
+        <p>Tilt head forward and pinch nose.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 13.png" alt="">
+        <h3>Insect Bite</h3>
+        <p>Clean and apply antihistamine.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 14.png" alt="">
+        <h3>Allergic Reaction</h3>
+        <p>Use epinephrine if available.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 15.png" alt="">
+        <h3>Asthma Attack</h3>
+        <p>Use inhaler, calm person down.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 16.png" alt="">
+        <h3>Seizure</h3>
+        <p>Protect from injury, do not restrain.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 17.png" alt="">
+        <h3>Poisoning</h3>
+        <p>Do not induce vomiting, call poison control.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 18.png" alt="">
+        <h3>Hypothermia</h3>
+        <p>Warm gradually, avoid direct heat.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 19.png" alt="">
+        <h3>Heart Attack</h3>
+        <p>Call emergency, give aspirin if not allergic.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 20.png" alt="">
+        <h3>Stroke</h3>
+        <p>FAST: Face, Arms, Speech, Time – call help.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 21.png">
+        <h3>Drowning</h3>
+        <p>Remove from water, check breathing, CPR if needed.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 22.png">
+        <h3>Electric Shock</h3>
+        <p>Turn off source, do not touch victim directly.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 23.png">
+        <h3>Eye Injury</h3>
+        <p>Do not rub, cover and seek help.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 24.png">
+        <h3>Head Injury</h3>
+        <p>Watch for vomiting or unconsciousness.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 25.png">
+        <h3>Cuts</h3>
+        <p>Clean, disinfect, and bandage.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 26.png">
+        <h3>Animal Bite</h3>
+        <p>Wash and seek medical help for rabies.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 27.png">
+        <h3>Snake Bite</h3>
+        <p>Keep still, call emergency, do not suck venom.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 28.png">
+        <h3>Burning Eyes</h3>
+        <p>Flush with water for 15 mins.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 29.png">
+        <h3>Dental Injury</h3>
+        <p>Rinse and store tooth in milk, go to dentist.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 30.png">
+        <h3>Ear Injury</h3>
+        <p>Avoid poking, seek medical attention.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 31.png">
+        <h3>Stings</h3>
+        <p>Remove stinger, apply ice.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 32.png">
+        <h3>Sunburn</h3>
+        <p>Cool skin, apply aloe vera.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 33.png">
+        <h3>Vomiting</h3>
+        <p>Rehydrate, rest, avoid solid foods.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 34.png">
+        <h3>Diabetic Emergency</h3>
+        <p>Give sugar or juice if low..</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 35.png">
+        <h3>Anaphylaxis</h3>
+        <p>Use epipen, call emergency immediately.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 36.png">
+        <h3>Panic Attack</h3>
+        <p>Give sugar or juice if low..</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 37.png">
+        <h3>Back Pain</h3>
+        <p>Use epipen, call emergency immediately.</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 38.png">
+        <h3>Knee Injury</h3>
+        <p>Give sugar or juice if low..</p>
+      </div>
+      <div class="card">
+        <img src="images/image copy 39.png">
+        <h3>Eye Irritation</h3>
+        <p>Use epipen, call emergency immediately.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Fractures</h3>
-      <p>Immobilize the area with a splint and seek medical help.</p>
-    </div>
-    <div class="card">
-      <h3>Choking</h3>
-      <p>Give 5 back blows between the shoulder blades followed by abdominal thrusts.</p>
-    </div>
-    <div class="card">
-      <h3>CPR</h3>
-      <p>30 chest compressions and 2 rescue breaths until help arrives.</p>
-    </div>
-    <div class="card">
-      <h3>Snake Bite</h3>
-      <p>Keep the victim calm and the bitten area still. Do not suck the venom.</p>
-    </div>
-    <!-- Add more cards if you want -->
   </section>
-
+  <h2 class="h2-mobile">🚨EMERGENCY</h2>
+  <section id="emergency">
+    <h2>🚨EMERGENCY</h2>
+    <div class="emergency-contact">
+      <img src="images/image copy 7.png">
+      <h3>Ambulance</h3>
+      <p>108</p>
+    </div>
+    <div class="emergency-contact">
+      <img src="images/image copy 8.png">
+      <h3>Police</h3>
+      <p>100</p>
+    </div>
+    <div class="emergency-contact">
+      <img src="images/image copy 10.png">
+      <h3>poison Control</h3>
+      <p>1800-425-1213</p>
+    </div>
+    <div class="emergency-contact">
+      <img src="images/image copy 9.png">
+      <h3>Fire Dept</h3>
+      <p>101</p>
+    </div>
+  </section>
+  <br>
+  <h2 class="health-h2" style="text-align: center;">HEALTH DASHBOARD</h2>
+  <section id="health">
+    <div class="factors">
+      <p>❤️</p>
+      <h3>Heart Rate</h3>
+      <p>60-100 bpm</p>
+    </div>
+    <div class="factors">
+      <p>🩸</p>
+      <h3>Blood Pressure</h3>
+      <p>120/80 mm Hg</p>
+    </div>
+    <div class="factors">
+      <p>🌡️</p>
+      <h3>Temperature</h3>
+      <p>97.86°F</p>
+    </div>
+    <div class="factors">
+      <p>🫀</p>
+      <h3>cholestrol</h3>
+      <p>200 mg/dl</p>
+    </div>
+  </section>
+  <section id="tips">
+    <h2>🌟Daily Healthy Tips</h2>
+    <ul>
+      <li>Drink atleast 8 glass water daily.</li>
+      <hr class="hr">
+      <li>Get 7-9 hours of quality sleep each night.</li>
+      <hr class="hr">
+      <li>Exercise for at least 30 minutes daily.</li>
+      <hr class="hr">
+      <li>Eat 5 servings of fruits and vegetables.</li>
+      <hr class="hr">
+      <li>Take breaks from screen time every hour.</li>
+      <hr class="hr">
+    </ul>
+  </section>
   <footer>
-    <p>Contact us: <a href="tel:+911234567890">+91-1234567890</a></p>
+    <p>Contact us: <a href="tel:+919988548609">+91-9988548609</a></p>
     <div class="socials">
-      <a href="#">Instagram</a> | 
-      <a href="#">LinkedIn</a> | 
-      <a href="#">Twitter</a>
+      <a href="#"><i class="fa fa-instagram "></i> Instagram</a> | 
+      <a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a> | 
+      <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+    </div>
+    <br>
+    <hr class="hr" >
+    <br>
+    <div>
+      <p>© 2025 MedBuddy Healthcare Platform. All rights reserved.</p>
+      <!-- <br> -->
+      <p style="opacity: 0.3;">This platform provides general medical information and should not replace professional medical advice. Always consult with qualified healthcare providers for medical concerns.</p>
+      <br>
     </div>
   </footer>
-
   <script src="script.js" defer></script>
   <script src="ask-ai.js" defer></script>
 </body>

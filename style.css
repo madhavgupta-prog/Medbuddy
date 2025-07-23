@@ -6,91 +6,276 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #f9f9f9;
-  padding: 20px;
+  padding: 0px;
+  background: #e9e9e9;
   color: #333;
+}
+.hr{
+  color: darkgrey; 
+  margin:10px 20%;
+  opacity: 0.2;
 }
 
 header {
   text-align: center;
   margin-bottom: 20px;
+  
+}
+
+#hero{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: linear-gradient(to right, #4bb4ff, #00ae62);
+
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #0a9396;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+header p{
+  color: aliceblue;
+  margin-bottom: 30px;
 }
 
 .search-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  /* padding: 8px; */
+  margin: 0 auto;
+  width: fit-content;
 }
 
-.search-section input,
-.search-section button {
-  padding: 10px;
-  width: 90%;
-  max-width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+.search-section input{
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 8px 12px;
+  height: 40px;
+  width: 350px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
 }
-
-.search-section button {
-  background-color: #0a9396;
-  color: white;
-  cursor: pointer;
-  border: none;
-  transition: background 0.3s ease;
+.search-section input::placeholder{
+  color:rgba(255,255,255,0.7);
 }
-
-.search-section button:hover {
-  background-color: #007a7a;
-}
-
-#aiResponse {
-  margin: 10px auto;
-  max-width: 600px;
-  font-style: italic;
-  text-align: center;
-  color: #444;
+.search-section input:focus{
+  box-shadow: 12px 12px 12px rgba(0, 40, 75, 0.2);
 }
 
 #cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 20px;
+}
+
+.card-row{
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+.card-row::-webkit-scrollbar{
+  height: 8px;
+}
+.card-row::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 4px;
 }
 
 .card {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 170px;
+  height: 170px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.factors img,
+.emergency-contact img,
+.card img{
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+.card h3{
+  color: #1f2937;
 }
 
 .card:hover {
+  padding: 2px 2px;
+  img{
+    transition: all 0.5s ease;
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  p{
+    font-size: 16px;
+    display: block;
+  }
+  h3{
+    font-size: 16px;
+  }
+}
+.card:hover{
+  transition: all 0.4s ease;
+  /* transform: scale(1.05); */
+  box-shadow: 0 4px 12px rgba(0, 40, 75, 0.2);
   transform: translateY(-5px);
+}
+.card p{
+  display: none;
+}
+#emergency{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  padding: 20px 20px;
+  border-top:5px solid rgb(255, 78, 78);
+  background: #ffdbdb;
+}
+.emergency-contact{
+  background: white;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px red;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  cursor: pointer;
+}
+.emergency-contact:hover{
+  img{
+    transition: all 2s ease;
+    transform: rotate(360deg);
+  }
+  transition: all 0.5s ease;
+  transform: scale(1.05);
+}
+#emergency h2{
+  color: red;
+}
+.h2-mobile{
+  text-align: center;
+  display: none;
+}
+#tips{
+  padding: 20px;
+  background: #bffcbe;
+  border-radius: 10px;
+  margin: 20px 20%;
+  color: #006702;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#health{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.factors{
+  background: #e9e9e9;
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+}
+ul{
+  margin-left: 20px;
 }
 
 footer {
-  margin-top: 40px;
   padding-top: 20px;
   text-align: center;
   font-size: 0.95rem;
-  color: #666;
+  color: #bfbfbf;
+  background: #1f2937;
 }
 
 footer a {
-  color: #0a9396;
+  color: #ababab;
   text-decoration: none;
 }
 
 footer .socials a {
   margin: 0 5px;
+}
+@media(max-width: 1200px){
+  .factors,
+  .emergency-contact{
+    height: 150px;
+    width: 150px;
+    padding: 3px;
+  }
+  .emergency-contact img{
+    height: 50px;
+    width: 50px;
+  }
+}
+@media(max-width: 900px){
+  #emergency h2{
+    display: none;
+  }
+  .h2-mobile{
+    font-weight: 600;
+    display: block;
+  }
+  .health-h2{
+    font-weight: 600;
+  }
+}
+@media(max-width: 700px){
+  .factors{
+    height: 100px;
+    width: 120px;
+    padding: 3px;
+  }
+  .emergency-contact{
+    height: 100px;
+    width: 100px;
+    padding: 3px;
+  }
+  .emergency-contact h3{
+    display: none;
+  }
+}
+@media(max-width: 500px){
+  #health{
+    margin: 0;
+    padding: 0px;
+    padding-right: 10px;
+  }
+  .emergency-contact{
+    height: 70px;
+    width: 70px;
+    padding: 3px;
+    font-size: 10px;
+  }
+  .factors{
+    height: 60px;
+    width: 70px;
+    padding: 1px;
+    font-size: 10px;
+  }
+  .emergency-contact img{
+    height: 40px;
+    width: 40px;
+  }
+  #tips{
+    margin: 20px;
+  }
 }
